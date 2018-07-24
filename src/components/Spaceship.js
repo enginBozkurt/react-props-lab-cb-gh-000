@@ -12,6 +12,12 @@ class Spaceship extends React.Component {
           <h2>{this.props.colors.join(', ')}</h2>
         </div>
     )
-  } 
+  }
 }
 
+Spaceship.defaultProps = {
+  speed: 'slow',
+  hasRockets: false,
+  colors: ['black', 'red']
+
+};
